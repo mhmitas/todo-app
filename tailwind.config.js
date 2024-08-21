@@ -44,6 +44,7 @@ module.exports = {
           success: "#272d1d",
           "success-content": "#bef264",
           neutral: "#52525b",
+          "neutral-content": "#ffffff",
           "base-100": "#09090b",
           "base-200": "#18181b",
           "base-300": "#242427",
