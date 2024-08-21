@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply text-slate-100 bg-black
+.my-container {
+    @apply max-w-screen-2xl mx-auto px-6
+}
+
+.btn-sm {
+    @apply rounded
 }
