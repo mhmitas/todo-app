@@ -2,7 +2,7 @@ const { default: CheckEmailRemainder } = require("@/components/my-ui/CheckEmailR
 
 export default function Home() {
   return (
-    <section className="mt-4 space-y-10 my-container">
+    <section className="space-y-10 my-container">
       <CheckEmailRemainder />
     </section>
   );

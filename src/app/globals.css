@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .my-container {
-    @apply max-w-screen-2xl mx-auto px-6
+    @apply max-w-screen-2xl mx-auto px-6 mt-4
 }
 
 .btn-sm {
