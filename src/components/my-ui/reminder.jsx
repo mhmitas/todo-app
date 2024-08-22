@@ -20,13 +20,13 @@ const NotificationApp = () => {
     }, [isRunning, intervalTime]);
 
     return (
-        <div className="App">
-            <h1 className="text-lg font-bold mb-1">Reminder</h1>
-            {isRunning && <p className="mb-1">Running...</p>}
+        <div className="bg-base-200 border border-base-300 p-6 rounded-lg mt-8 w-full">
+            <h1 className="text-lg font-bold mb-4">Reminder</h1>
+            {isRunning && <p className="mb-1">Will be repeat after: {intervalTime} minute</p>}
             <div className="flex mb-4">
                 <div className="flex gap-4">
                     <div>
-                        <button className="btn" onClick={() => setIsRunning(!isRunning)}>
+                        <button className="btn btn-neutral" onClick={() => setIsRunning(!isRunning)}>
                             {isRunning ? "Stop" : "Start"} Reminder
                         </button>
                     </div>
@@ -35,8 +35,10 @@ const NotificationApp = () => {
                         <select onChange={(e) => {
                             setIntervalTime(e.target.value)
                         }}
-                            className="select text-base"
+                            value={intervalTime}
+                            className="select bg-base-200 text-base"
                         >
+                            <option value={.5}>0.5 min</option>
                             {minutes.map(minute => <option key={minute} value={minute + 1}>{minute + 1} min</option>)}
                         </select>
                     </div>

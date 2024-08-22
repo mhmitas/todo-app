@@ -11,7 +11,7 @@ const Navbar = () => {
                         <div tabIndex={0} role="button" className="btn btn-ghost text-lg btn-sm btn-square"><AiOutlineMenu /></div>
                         <ul tabIndex={0} className="dropdown-content menu bg-base-200 rounded-lg border border-base-300 z-[1] w-52 p-2 shadow-md">
                             <li><Link href="/reminder">Reminder</Link></li>
-                            <li><a>Item 2</a></li>
+                            <li><Link href="/just-reminder">Just Reminder</Link></li>
                         </ul>
                     </div>
                     <Link className='font-semibold btn btn-ghost btn-sm text-xl' href="/">Mh TODO</Link>

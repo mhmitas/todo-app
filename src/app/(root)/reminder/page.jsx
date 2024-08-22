@@ -4,7 +4,7 @@ import React from 'react';
 
 const Page = () => {
     return (
-        <div className='my-container'>
+        <div className='my-container mb-10'>
             <Clock />
             <Reminder />
         </div>
