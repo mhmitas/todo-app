@@ -4,7 +4,7 @@ const AnalogClock = ({ hour, minute, second }) => {
     const hours = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 
     return (
-        <div className='flex justify-center my-6 overflow-auto'>
+        <div className='flex justify-center mb-4 overflow-auto'>
             <div className='size-max rounded-full p-2 bg-gradient-to-b from-amber-900 via-gray-500 to-gray-600'>
                 <div className="relative flex items-center justify-center bg-white rounded-full size-64">
                     {/* Clock Center */}

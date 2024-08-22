@@ -22,7 +22,7 @@ const Clock = () => {
 
     return (
         <div>
-            <div className={`flex items-center justify-center gap-2 text-4xl font-semibold bg-base-200 w-max mx-auto py-3 px-5 rounded-lg ${roboto.className}`}>
+            <div className={`flex items-center justify-center gap-2 text-4xl font-semibold bg-base-200 border-base-300 border w-max mx-auto py-3 px-5 mb-4 rounded-lg ${roboto.className}`}>
                 <p>{hour.toString().padStart(2, '0')}</p>
                 <span>:</span>
                 <p>{minute.toString().padStart(2, '0')}</p>
